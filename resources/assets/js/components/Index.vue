@@ -1,26 +1,7 @@
 <template>
   <div>
-      <h1>{{ title }}</h1>
-      <p>{{ message }}</p>
-      <button @click="editButton" class="btn btn-primary">edit</button>
+      <h1>Vue + Chart.js Sample</h1>
+      <router-link to="/sample-1" class="btn btn-primary btn-clock">Sample 1</router-link>
+      <router-link to="/sample-2" class="btn btn-success btn-clock">Sample 2</router-link>
   </div>
 </template>
-
-
-<script>
-export default {
-  data() {
-    return {
-      title: "Laravel + Vue.js",
-      message: "Initialize"
-    };
-  },
-  methods: {
-    editButton: function() {
-      alert("edit");
-      this.title = "Welcome to Vue.js!";
-      this.message = "This is a sample application.";
-    }
-  }
-};
-</script>
