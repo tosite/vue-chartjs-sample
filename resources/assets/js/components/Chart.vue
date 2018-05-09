@@ -49,12 +49,6 @@ export default {
       for (var i = 0; i < loopCnt;i++) {
         labels = [this.getRandomInt(), this.getRandomInt()]
 
-        if (min > labels[0]) {
-          min = labels[0]
-        }
-        if (min > labels[1]) {
-          min = labels[0]
-        }
         if (max < labels[0]) {
           max = labels[0]
         }
